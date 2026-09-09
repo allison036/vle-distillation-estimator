@@ -69,51 +69,54 @@
                 <!-- Distillation Column SVG Diagram -->
                 <div class="bg-slate-100 rounded-xl p-4 flex flex-col items-center justify-center border border-slate-200">
                     <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Distillation Column Scheme</span>
-                    <svg width="180" height="340" viewBox="0 0 180 340" class="overflow-visible">
-                        <!-- Condenser -->
-                        <circle cx="140" cy="30" r="15" fill="none" stroke="#4338ca" stroke-width="2.5"/>
-                        <path d="M 140 15 L 140 10 L 105 10" fill="none" stroke="#4338ca" stroke-width="2"/>
-                        <path d="M 140 45 L 140 60 L 95 60" fill="none" stroke="#4338ca" stroke-width="2"/>
-                        <path d="M 140 45 L 175 45" fill="none" stroke="#4338ca" stroke-width="2" stroke-dasharray="2"/>
-                        <text x="175" y="42" class="text-[9px] font-bold fill-indigo-700">D (Distillate)</text>
-                        <text x="140" y="34" class="text-[8px] font-extrabold fill-indigo-700 text-center" text-anchor="middle">COND</text>
+                    <svg width="220" height="350" viewBox="0 0 220 350" class="overflow-visible">
+                        <!-- Condenser (Top Right) -->
+                        <circle cx="175" cy="32" r="15" fill="none" stroke="#4338ca" stroke-width="2.5"/>
+                        <path d="M 175 17 L 175 10 L 105 10 L 105 45" fill="none" stroke="#4338ca" stroke-width="2"/>
+                        <path d="M 175 47 L 175 60 L 130 60" fill="none" stroke="#4338ca" stroke-width="2"/>
+                        <path d="M 175 32 L 210 32" fill="none" stroke="#4338ca" stroke-width="2" stroke-dasharray="2"/>
+                        <text x="212" y="35" class="text-[9px] font-bold fill-indigo-700">D (Distillate)</text>
+                        <text x="175" y="36" class="text-[8px] font-extrabold fill-indigo-700" text-anchor="middle">COND</text>
 
                         <!-- Column Shell -->
-                        <rect x="50" y="40" width="50" height="240" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="3"/>
+                        <rect x="80" y="45" width="50" height="250" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="3"/>
 
                         <!-- Rectifying Plates (Upper) -->
-                        <line x1="50" y1="70" x2="100" y2="70" stroke="#94a3b8" stroke-width="2"/>
-                        <line x1="50" y1="100" x2="100" y2="100" stroke="#94a3b8" stroke-width="2"/>
-                        <line x1="50" y1="130" x2="100" y2="130" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="80" y1="75" x2="130" y2="75" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="80" y1="105" x2="130" y2="105" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="80" y1="135" x2="130" y2="135" stroke="#94a3b8" stroke-width="2"/>
 
-                        <!-- Feed Plate -->
-                        <line x1="50" y1="160" x2="100" y2="160" stroke="#f43f5e" stroke-width="2.5"/>
-                        <path d="M 10 160 L 50 160" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrow)"/>
-                        <text x="12" y="152" class="text-[10px] font-bold fill-rose-600">Feed (F)</text>
+                        <!-- Feed Plate (Middle - Well Separated) -->
+                        <line x1="80" y1="169" x2="130" y2="169" stroke="#f43f5e" stroke-width="3"/>
+
+                        <!-- Feed Entry Badge and Arrow (Left Side - Spacious & Clear) -->
+                        <rect x="6" y="158" width="52" height="22" rx="6" fill="#ffe4e6" stroke="#f43f5e" stroke-width="1.5"/>
+                        <text x="32" y="173" class="text-[10px] font-bold fill-rose-700" text-anchor="middle">Feed (F)</text>
+                        <path d="M 58 169 L 80 169" fill="none" stroke="#f43f5e" stroke-width="2.5" marker-end="url(#arrow)"/>
 
                         <!-- Stripping Plates (Lower) -->
-                        <line x1="50" y1="190" x2="100" y2="190" stroke="#94a3b8" stroke-width="2"/>
-                        <line x1="50" y1="220" x2="100" y2="220" stroke="#94a3b8" stroke-width="2"/>
-                        <line x1="50" y1="250" x2="100" y2="250" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="80" y1="203" x2="130" y2="203" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="80" y1="233" x2="130" y2="233" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="80" y1="263" x2="130" y2="263" stroke="#94a3b8" stroke-width="2"/>
 
-                        <!-- Reboiler -->
-                        <circle cx="140" cy="290" r="15" fill="none" stroke="#0f172a" stroke-width="2.5"/>
-                        <path d="M 75 280 L 75 290 L 125 290" fill="none" stroke="#0f172a" stroke-width="2"/>
-                        <path d="M 140 275 L 140 260 L 95 260" fill="none" stroke="#0f172a" stroke-width="2"/>
-                        <path d="M 140 305 L 140 320 L 175 320" fill="none" stroke="#0f172a" stroke-width="2"/>
-                        <text x="175" y="316" class="text-[9px] font-bold fill-slate-800">W (Bottoms)</text>
-                        <text x="140" y="294" class="text-[8px] font-extrabold fill-slate-800 text-center" text-anchor="middle">REB</text>
+                        <!-- Reboiler (Bottom Right) -->
+                        <circle cx="175" cy="305" r="15" fill="none" stroke="#0f172a" stroke-width="2.5"/>
+                        <path d="M 105 295 L 105 305 L 160 305" fill="none" stroke="#0f172a" stroke-width="2"/>
+                        <path d="M 175 290 L 175 275 L 130 275" fill="none" stroke="#0f172a" stroke-width="2"/>
+                        <path d="M 175 320 L 175 332 L 210 332" fill="none" stroke="#0f172a" stroke-width="2"/>
+                        <text x="212" y="335" class="text-[9px] font-bold fill-slate-800">W (Bottoms)</text>
+                        <text x="175" y="309" class="text-[8px] font-extrabold fill-slate-800" text-anchor="middle">REB</text>
 
                         <!-- Zone Highlighters -->
                         <!-- Rectifying Overlay -->
-                        <rect id="rectHighlight" x="47" y="45" width="56" height="110" fill="indigo" fill-opacity="0.15" stroke="#4338ca" stroke-width="1.5" stroke-dasharray="3" class="transition-all duration-300 hidden"/>
+                        <rect id="rectHighlight" x="77" y="48" width="56" height="112" fill="indigo" fill-opacity="0.15" stroke="#4338ca" stroke-width="1.5" stroke-dasharray="3" class="transition-all duration-300 hidden"/>
                         <!-- Stripping Overlay -->
-                        <rect id="stripHighlight" x="47" y="165" width="56" height="110" fill="amber" fill-opacity="0.15" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3" class="transition-all duration-300 hidden"/>
+                        <rect id="stripHighlight" x="77" y="178" width="56" height="112" fill="amber" fill-opacity="0.15" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3" class="transition-all duration-300 hidden"/>
 
-                        <!-- Labels -->
-                        <text x="75" y="55" class="text-[8px] fill-slate-400 font-semibold" text-anchor="middle">Plate 1</text>
-                        <text x="75" y="115" class="text-[9px] fill-indigo-800 font-bold" text-anchor="middle">Rectifying</text>
-                        <text x="75" y="235" class="text-[9px] fill-amber-700 font-bold" text-anchor="middle">Stripping</text>
+                        <!-- Labels inside column -->
+                        <text x="105" y="60" class="text-[8px] fill-slate-400 font-semibold" text-anchor="middle">Plate 1</text>
+                        <text x="105" y="120" class="text-[9px] fill-indigo-800 font-bold" text-anchor="middle">Rectifying</text>
+                        <text x="105" y="248" class="text-[9px] fill-amber-700 font-bold" text-anchor="middle">Stripping</text>
 
                         <!-- Markers -->
                         <defs>
@@ -182,7 +185,7 @@
                                     <label for="compXD" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">
                                         Distillate Composition (\(z_D\))
                                     </label>
-                                    <p class="text-xs text-slate-400 mb-2">Desired distillate purity. Range: [y_n - 1.0]</p>
+                                    <p class="text-xs text-slate-400 mb-2">Desired distillate purity. Range: [\(y_n\) - 1.0]</p>
                                     <input type="number" id="compXD" step="0.001" min="0" max="1" value="0.980" class="block w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-slate-900 font-medium transition-all" oninput="calculate()">
                                 </div>
                             </div>
@@ -200,7 +203,7 @@
                                     <label for="compXW" class="block text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">
                                         Bottoms Composition (\(x_W\))
                                     </label>
-                                    <p class="text-xs text-slate-400 mb-2">Bottom product waste purity. Range: [0.0 - y_m]</p>
+                                    <p class="text-xs text-slate-400 mb-2">Bottom product waste purity. Range: [0.0 - \(y_m\)]</p>
                                     <input type="number" id="compXW" step="0.001" min="0" max="1" value="0.050" class="block w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-slate-900 font-medium transition-all" oninput="calculate()">
                                 </div>
                             </div>
@@ -262,13 +265,13 @@
                         <path d="M 95 30 L 95 125" fill="none" stroke="#0891b2" stroke-width="3" stroke-linecap="round" />
                         <polygon points="95,130 91,120 99,120" fill="#0891b2" />
                         <text x="90" y="55" class="text-xs font-bold fill-cyan-700" text-anchor="end">Liquid Entering Plate</text>
-                        <text id="lblLiquidIn" x="90" y="72" class="text-[11px] font-semibold fill-slate-500" text-anchor="end">x_n-1 (from above)</text>
+                        <text id="lblLiquidIn" x="90" y="72" class="text-[11px] font-semibold fill-slate-500" text-anchor="end"><tspan font-style="italic">x</tspan><tspan font-size="75%" baseline-shift="sub">n-1</tspan> (from above)</text>
 
                         <!-- 2. Vapor Leaving (Upwards from Tray - Top Right) -->
                         <path d="M 280 120 L 280 35" fill="none" stroke="#4338ca" stroke-width="3" stroke-linecap="round" stroke-dasharray="5,2" />
                         <polygon points="280,30 276,40 284,40" fill="#4338ca" />
                         <text x="295" y="55" class="text-xs font-bold fill-indigo-700" text-anchor="start">Vapor Leaving Plate</text>
-                        <text id="lblVaporOut" x="295" y="72" class="text-sm font-bold fill-slate-900" text-anchor="start">y_n = 0.8000</text>
+                        <text id="lblVaporOut" x="295" y="72" class="text-sm font-bold fill-slate-900" text-anchor="start"><tspan font-style="italic">y</tspan><tspan font-size="75%" baseline-shift="sub">n</tspan> = 0.8000</text>
 
                         <!-- 3. Tray Identifier Badge (Top Center) -->
                         <rect x="175" y="10" width="130" height="22" rx="11" fill="#312e81" />
@@ -278,13 +281,13 @@
                         <path d="M 180 270 L 180 160" fill="none" stroke="#e11d48" stroke-width="3" stroke-linecap="round" stroke-dasharray="5,2" />
                         <polygon points="180,155 176,165 184,165" fill="#e11d48" />
                         <text x="165" y="215" class="text-xs font-bold fill-rose-600" text-anchor="end">Vapor Entering Plate</text>
-                        <text id="lblVaporIn" x="165" y="232" class="text-sm font-bold fill-slate-900" text-anchor="end">y_n+1 = 0.5352</text>
+                        <text id="lblVaporIn" x="165" y="232" class="text-sm font-bold fill-slate-900" text-anchor="end"><tspan font-style="italic">y</tspan><tspan font-size="75%" baseline-shift="sub">n+1</tspan> = 0.5352</text>
 
                         <!-- 5. Liquid Leaving (Down through Downcomer - Bottom Right) -->
                         <path d="M 380 155 L 380 265" fill="none" stroke="#0369a1" stroke-width="3" stroke-linecap="round" />
                         <polygon points="380,270 376,260 384,260" fill="#0369a1" />
                         <text x="365" y="215" class="text-xs font-bold fill-sky-700" text-anchor="end">Liquid Leaving Plate</text>
-                        <text id="lblLiquidOut" x="365" y="232" class="text-sm font-bold fill-slate-900" text-anchor="end">x_n = 0.6465</text>
+                        <text id="lblLiquidOut" x="365" y="232" class="text-sm font-bold fill-slate-900" text-anchor="end"><tspan font-style="italic">x</tspan><tspan font-size="75%" baseline-shift="sub">n</tspan> = 0.6465</text>
                     </svg>
                 </div>
 
@@ -594,10 +597,10 @@
                 // Update output labels
                 document.getElementById('resVaporInLabel').innerHTML = "Vapor from Below (\\(y_{n+1}\\))";
                 document.getElementById('lblTrayTitle').textContent = "PLATE n (RECTIFYING)";
-                document.getElementById('lblVaporIn').textContent = `y_n+1 = ${yNext.toFixed(4)}`;
-                document.getElementById('lblLiquidOut').textContent = `x_n = ${xVal.toFixed(4)}`;
-                document.getElementById('lblVaporOut').textContent = `y_n = ${yVal.toFixed(4)}`;
-                document.getElementById('lblLiquidIn').textContent = `x_n-1 (equilibrium above)`;
+                document.getElementById('lblVaporIn').innerHTML = `<tspan font-style="italic">y</tspan><tspan font-size="75%" baseline-shift="sub">n+1</tspan> = ${yNext.toFixed(4)}`;
+                document.getElementById('lblLiquidOut').innerHTML = `<tspan font-style="italic">x</tspan><tspan font-size="75%" baseline-shift="sub">n</tspan> = ${xVal.toFixed(4)}`;
+                document.getElementById('lblVaporOut').innerHTML = `<tspan font-style="italic">y</tspan><tspan font-size="75%" baseline-shift="sub">n</tspan> = ${yVal.toFixed(4)}`;
+                document.getElementById('lblLiquidIn').innerHTML = `<tspan font-style="italic">x</tspan><tspan font-size="75%" baseline-shift="sub">n-1</tspan> (from above)`;
 
                 // Math Panel updates
                 document.getElementById('mathEqDescription').innerHTML = "Applying the operating line (Sorel-Lewis simplified mass balance) for the <strong>rectifying section</strong>:";
@@ -614,10 +617,10 @@
                 // Update output labels
                 document.getElementById('resVaporInLabel').innerHTML = "Vapor from Below (\\(y_{m+1}\\))";
                 document.getElementById('lblTrayTitle').textContent = "PLATE m (STRIPPING)";
-                document.getElementById('lblVaporIn').textContent = `y_m+1 = ${yNext.toFixed(4)}`;
-                document.getElementById('lblLiquidOut').textContent = `x_m = ${xVal.toFixed(4)}`;
-                document.getElementById('lblVaporOut').textContent = `y_m = ${yVal.toFixed(4)}`;
-                document.getElementById('lblLiquidIn').textContent = `x_m-1 (equilibrium above)`;
+                document.getElementById('lblVaporIn').innerHTML = `<tspan font-style="italic">y</tspan><tspan font-size="75%" baseline-shift="sub">m+1</tspan> = ${yNext.toFixed(4)}`;
+                document.getElementById('lblLiquidOut').innerHTML = `<tspan font-style="italic">x</tspan><tspan font-size="75%" baseline-shift="sub">m</tspan> = ${xVal.toFixed(4)}`;
+                document.getElementById('lblVaporOut').innerHTML = `<tspan font-style="italic">y</tspan><tspan font-size="75%" baseline-shift="sub">m</tspan> = ${yVal.toFixed(4)}`;
+                document.getElementById('lblLiquidIn').innerHTML = `<tspan font-style="italic">x</tspan><tspan font-size="75%" baseline-shift="sub">m-1</tspan> (from above)`;
 
                 // Math Panel updates
                 document.getElementById('mathEqDescription').innerHTML = "Applying the operating line (Sorel-Lewis simplified mass balance) for the <strong>stripping section</strong>:";
